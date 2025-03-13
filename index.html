@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="icon" type"icon/png" href="./images/favicon.png">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main>
+    <h1 class="heading">quickQuiz</h1>
+    <h2 class="sub-heading">Daily Quiz To Test Your JavaScript Knowledge!</h2>
+    <div class="result hide">
+      <p class="score"></p>
+      <p class="reload">Try Again?</p>
+    </div>
+    <form class="javaQuestionair">
+      <div class="question">
+        <p>1. Inside which HTML element do we put the JavaScript?</p>
+        <div class="options">
+          <div class="space">
+            <input type="radio" name="q1" value="A" checked>
+          <label for="q1">&ltjs&gt</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q1" value="B">
+          <label for="q1">&ltscript&gt</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q1" value="C">
+          <label for="q1">&ltscripting&gt</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q1" value="D">
+          <label for="q1">&ltjavascript&gt</label><br>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <p>2. What is the correct JavaScript syntax to change the content of the HTML element below? <br><br><i>&#60;p id&#61;&quot;demo&quot;&#62;This is a demonstration.&#60;&#47;p&#62;</i></p>
+        <div class="options">
+          <div class="space">
+            <input type="radio" name="q2" value="A" checked>
+          <label for="q2">document&#46;getElementByName&#40;&quot;p&quot;&#41;&#46;innerHTML &#61; &quot;Hello World&#33;&quot;&#59;</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q2" value="B">
+          <label for="q2">#demo&#46;innerHTML &#61; &quot;Hello World&#33;&quot;&#59;</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q2" value="C">
+          <label for="q2">document&#46;getElement&#40;&quot;p&quot;&#41;&#46;innerHTML &#61; &quot;Hello World&#33;&quot;&#59;</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q2" value="D">
+          <label for="q2">document&#46;getElementByld&#40;&quot;demo&quot;&#41;&#46;innerHTML &#61; &quot;Hello World&#33;&quot;&#59;</label><br>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <p>3. Where is the correct place to insert a JavaScript?</p>
+        <div class="options">
+          <div class="space">
+            <input type="radio" name="q3" value="A" checked>
+          <label for="q3">The head section</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q3" value="B">
+          <label for="q3">The body section</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q3" value="C">
+          <label for="q3">Both the head section and body section are correct</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q3" value="D">
+          <label for="q3">None of the above</label><br>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <p>4. How do you write "Hello World" in an alert box?</p>
+        <div class="options">
+          <div class="space">
+            <input type="radio" name="q4" value="A" checked>
+          <label for="q4">alert("Hello World");</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q4" value="B">
+          <label for="q4">msgBox("Hello World");</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q4" value="C">
+          <label for="q4">alertBox("Hello World");</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q4" value="D">
+          <label for="q4">msg("Hello World");</label><br>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <p>5. What is the correct way to write a JavaScript array?</p>
+        <div class="options">
+          <div class="space">
+            <input type="radio" name="q5" value="A" checked>
+          <label for="q5">var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q5" value="B">
+          <label for="q5">var colors = (1:"red", 2:"green", 3:"blue")</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q5" value="C">
+          <label for="q5">var colors = "red", "green", "blue"</label><br>
+          </div>
+          <div class="space">
+            <input type="radio" name="q5" value="D">
+          <label for="q5">var colors = ["red", "green", "blue"]</label><br>
+          </div>
+        </div>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
